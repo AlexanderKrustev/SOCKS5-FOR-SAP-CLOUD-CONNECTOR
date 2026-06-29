@@ -1,0 +1,35 @@
+{
+  "name": "sap-cf-socks",
+  "version": "1.0.0",
+  "description": "SOCKS5 proxy client for SAP BTP Cloud Foundry — enables CAP applications to reach on-premise resources via SAP Cloud Connector.",
+  "main": "sap-cf-socks.js",
+  "repository": "<Add your repository here>",
+  "license": "MIT",
+  "keywords": [
+    "sap",
+    "btp",
+    "cap",
+    "cloud-foundry",
+    "cloud-connector",
+    "socks5",
+    "connectivity"
+  ],
+  "dependencies": {
+    "@sap/xsenv": "^5.1.0",
+    "socks": "^2.8.1"
+  },
+  "peerDependencies": {
+    "@sap/cds": ">=7",
+    "pg": ">=8",
+    "tedious": ">=18"
+  },
+  "peerDependenciesMeta": {
+    "@sap/cds": { "optional": true },
+    "pg": { "optional": true },
+    "tedious": { "optional": true }
+  },
+  "scripts": {
+    "start": "cds serve",
+    "watch": "cds watch"
+  }
+}
